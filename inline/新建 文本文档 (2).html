@@ -1,0 +1,112 @@
+<!-- ===== Blog Header + Search (inline, drop-in) ===== -->
+<section class="fx-blog-hero">
+  <div class="fx-wrap">
+    <h1 class="fx-brand" aria-label="Fitnexa Blog">Fitnexa.<span>Blog</span></h1>
+
+    <form class="fx-search" role="search" method="get" action="/blog">
+      <label class="fx-visually-hidden" for="q">Search blog</label>
+      <input
+        id="q"
+        name="q"
+        type="search"
+        placeholder="Search articles…"
+        inputmode="search"
+        aria-label="Search blog"
+      />
+      <button class="fx-btn" type="submit" aria-label="Submit search">
+        <!-- magnifier icon -->
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M20 20l-3.5-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <style>
+    /* ====== minimal palette & layout ====== */
+    .fx-blog-hero{
+      background:#0f1014;               /* 深色带 */
+      color:#e6e7eb;                    /* 浅灰字体 */
+      padding:28px 16px;
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .fx-wrap{
+      max-width:1150px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      gap:32px;
+    }
+    /* 品牌标题：左对齐但整体居中容器 */
+    .fx-brand{
+      margin:0;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-weight:600;
+      font-size:clamp(28px, 5vw, 48px);
+      letter-spacing:.2px;
+      line-height:1.05;
+      color:#e6e7eb;
+      flex:1 1 auto;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .fx-brand span{ color:#d0cfd5; font-weight:400; }
+
+    /* 搜索区：右侧 */
+    .fx-search{
+      position:relative;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex:0 0 380px;                 /* 大屏宽度 */
+      max-width:100%;
+    }
+    .fx-search input{
+      width:100%;
+      height:44px;
+      padding:0 44px 0 14px;          /* 右侧给按钮预留空间 */
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,.14);
+      background:#16171d;
+      color:#eef0f4;
+      outline:none;
+      font:500 14px/1.2 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      transition:border-color .2s ease, background .2s ease, box-shadow .2s ease;
+    }
+    .fx-search input::placeholder{ color:#9aa0ab; }
+    .fx-search input:focus{
+      border-color:#7a8cff;
+      box-shadow:0 0 0 3px rgba(122,140,255,.18);
+      background:#151823;
+    }
+    .fx-btn{
+      position:absolute;
+      right:6px;                      /* 让图标落在输入框右内侧 */
+      height:32px; width:32px;
+      display:grid; place-items:center;
+      border-radius:8px;
+      border:0;
+      background:transparent;
+      color:#cfd3db;
+      cursor:pointer;
+      transition:background .15s ease, color .15s ease, transform .05s;
+    }
+    .fx-btn:hover{ background:rgba(255,255,255,.06); color:#fff; }
+    .fx-btn:active{ transform:scale(.98); }
+
+    /* 无障碍：隐藏可视标签 */
+    .fx-visually-hidden{
+      position:absolute!important;
+      clip:rect(1px,1px,1px,1px);
+      padding:0; border:0; height:1px; width:1px; overflow:hidden; white-space:nowrap;
+    }
+
+    /* ====== 响应式：窄屏堆叠 ====== */
+    @media (max-width: 780px){
+      .fx-wrap{ flex-direction:column; align-items:flex-start; gap:14px; }
+      .fx-search{ width:100%; flex-basis:auto; }
+      .fx-brand{ font-size:36px; }
+    }
+  </style>
+</section>

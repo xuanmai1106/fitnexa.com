@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+  CHANGE
+  head-title
+   1、 title-section 
+   2、 post-image 
+   3、 content
+  -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Training Schedules for Women: Balancing Hormonal Cycles and Exercise 🌿💛</title>
+  <!--<link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/xuanmai1106/fitnexa.com/main/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/xuanmai1106/fitnexa.com/main/logo.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/xuanmai1106/fitnexa.com/main/logo.png">-->
+  <style>
+    /* Import the same fonts used on the original Webflow site.  
+       Tenor Sans for display headings, Source Serif Pro for body text and
+       Libre Franklin for UI labels. If these remote fonts fail to load,
+       system fallbacks ensure readable typography. */
+    @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Source+Serif+Pro:wght@400;600;700&family=Libre+Franklin:wght@400;600&display=swap');
+
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #111111;
+      --muted-color: #666666;
+      --border-color: #e5e5e5;
+      --accent-color: #000000;
+      --primary-font: 'Source Serif Pro', Georgia, serif;
+      --display-font: 'Tenor Sans', 'Times New Roman', serif;
+      --ui-font: 'Libre Franklin', Arial, sans-serif;
+      --max-width: 1150px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--primary-font);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+        /* Section divider matching latest-posts width */
+    .section-divider {
+      max-width: var(--max-width);
+      margin: 2rem auto;
+      padding: 0 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+
+
+    /* ---------- Title section ---------- */
+    .title-section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1rem 2rem;
+    }
+    .category {
+      font-family: var(--ui-font);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted-color);
+      margin-bottom: 1.5rem;
+    }
+    .title-section h1 {
+      margin: 0;
+      font-family: var(--display-font);
+      font-weight: 400;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      line-height: 1.15;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .meta {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--ui-font);
+      font-size: 0.85rem;
+      color: var(--muted-color);
+    }
+    /* 使用外部 logo 图片作为品牌图标背景 */
+    .meta .brand-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: url('https://raw.githubusercontent.com/xuanmai1106/fitnexa.com/main/logo.png') center/cover no-repeat;
+    }
+    .meta .byline strong {
+      font-weight: 600;
+      color: var(--text-color);
+    }
+    .divider {
+      border-bottom: 1px solid var(--border-color);
+      margin: 2rem 0;
+    }
+    /* Reveal animation for title section on page load */
+    @keyframes titleFadeInUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .title-section {
+      animation: titleFadeInUp 700ms ease-out 80ms both;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .title-section { animation: none; }
+    }
+    /* ---------- Post image ---------- */
+    .post-image {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1rem 3rem;
+    }
+    .post-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0.25rem;
+    }
+
+    /* ---------- Content ---------- */
+    .content {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 0 1rem 2rem; /* 原为 4rem，缩小底部留白 */
+      font-size: 1rem;
+    }
+    /* 约束正文内零散图片尺寸（如二维码），避免撑出过大空白 */
+    .content img {
+      max-width: 240px;
+      height: auto;
+      display: block;
+      margin: 1.25rem auto;
+    }
+    .content p {
+      margin: 1.25rem 0;
+    }
+    .content p strong {
+      font-weight: 600;
+    }
+    .content h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-family: var(--display-font);
+      font-weight: 400;
+      font-size: 1.75rem;
+      line-height: 1.3;
+    }
+    .content ul {
+      padding-left: 1.2rem;
+      margin: 1rem 0;
+    }
+    .content ul li {
+      margin: 0.5rem 0;
+    }
+    /* Ordered list tuning: smaller font-size and comfy line-height */
+    .content ol {
+      padding-left: 1.4rem;
+      margin: 1rem 0;
+      list-style: decimal outside;
+    }
+    .content ol li {
+      margin: 0.5rem 0;
+      line-height: 1.45;
+    }
+    /* Keep number and text on the same line; adjust weight/size */
+    .content ol li > div {
+      display: inline;
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+    .content ol li > div strong {
+      font-weight: 600;
+    }
+    /* 可选：美化编号 */
+    .content ol li::marker {
+      font-family: var(--ui-font);
+      font-weight: 600;
+      color: var(--muted-color);
+    }
+    .content figure {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .content figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.25rem;
+    }
+    .content blockquote {
+      margin: 1.5rem 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--border-color);
+      color: var(--muted-color);
+      font-style: italic;
+    }
+
+    /* ---------- Latest posts section ---------- */
+    .latest-posts {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2rem 1rem; /* 原为 4rem，缩小顶部与底部留白 */
+    }
+    .latest-posts h3 {
+      font-family: var(--ui-font);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted-color);
+      margin-bottom: 2rem;
+    }
+    .post-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      border: none; /* 贴近参考样式，去除描边 */
+      border-radius: 0.25rem;
+      overflow: hidden;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+      background-color: var(--bg-color);
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .card img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16/9;      /* 固定为 16:9，视觉更统一 */
+      object-fit: cover;       /* 居中裁切 */
+      height: auto;
+    }
+    .card-content {
+      padding: 1rem;
+      font-family: var(--ui-font);
+    }
+    .card-content .category {
+      color: var(--muted-color);
+      font-family: var(--ui-font);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em; /* 更明显的小字距 */
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+    .card-content .card-title {
+      margin: 0 0 0.5rem;
+      font-family: var(--display-font);
+      font-size: clamp(1.1rem, 2.2vw, 1.5rem); /* 更大，随视口自适应 */
+      line-height: 1.2;
+      color: var(--text-color);
+      font-weight: 400; /* Tenor Sans 常规字重，贴近截图 */
+      text-transform: uppercase;  /* 全大写 */
+      letter-spacing: 0.02em;     /* 微字距 */
+    }
+    .card-content .by {
+      font-family: var(--ui-font);
+      font-size: 0.7rem;
+      color: var(--muted-color);
+      text-transform: uppercase;  /* BY 行全大写 */
+      letter-spacing: 0.12em;
+      font-weight: 600;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Title and meta -->
+  <section class="title-section">
+    <div class="category">Sports</div>
+    <h1>Training Schedules for Women: Balancing Hormonal Cycles and Exercise 🌿💛</h1>
+    <div class="meta">
+      <div class="brand-icon" aria-hidden="true"></div>
+      <div class="byline">By <strong>FITNEXA</strong> </div>
+    </div>
+  </section>
+
+  <!-- Hero image -->
+  <section class="post-image">
+    <img src="https://cdn.shopify.com/s/files/1/0641/2822/1345/files/shutterstock_2531421317.jpg?v=1740109356" />
+  </section>
+
+  <!-- Article content -->
+  <article class="content">
+    <div data-page-id="TNP7d5GCuoJVNexy3qgcj4yinnK" data-lark-html-role="root" data-docx-has-block-data="false">
+      <div class="ace-line ace-line old-record-id-SWWldbgtIo6LnVxsp72c8OIAnYd">Hello, beautiful souls! 🌟 If you’ve ever noticed that your workouts feel amazing one week but <em>totally draining</em> the next, you’re not alone. The truth is, <strong>women’s bodies go through natural hormonal fluctuations every month</strong>, and those changes can impact energy levels, recovery, and performance. Instead of fighting against these shifts, <strong>why not work with them?</strong>
+      </div>
+      <div class="ace-line ace-line old-record-id-ELixdB0UDod4C1xZ4yqcUuJnn6d">By aligning your <strong>training schedule with your hormonal cycle</strong>, you can move in a way that feels <strong>more intuitive, energizing, and effective</strong>. Let’s explore how to listen to your body and create a training routine that honors its natural rhythm. 🌙✨</div>
+      <h2 class="heading-2 ace-line old-record-id-RB6cdOmAcoSuHUxIRFzcTAranZ8"><strong>Understanding Your Menstrual Cycle and Training</strong></h2>
+      <div class="ace-line ace-line old-record-id-Xta6dUtXmoRWVqxU49Gc8EhrnSq">Your menstrual cycle isn’t just about your period—<strong>it’s a full cycle of hormonal shifts that affect how you feel, train, and recover</strong>. There are four main phases, each with its own energy patterns:</div>
+      <ol start="1" class="list-number1">
+      <li class="ace-line ace-line old-record-id-U1AjdDbnIoWgtoxfKfpcgTvvnkO" data-list="number">
+      <div>
+      <strong>Menstrual Phase (Days 1-5): Rest &amp; Recovery</strong> 🌸</div>
+      </li>
+      </ol>
+      <div class="ace-line ace-line old-record-id-LwU1dAXFjoVCVZxqibFcw3A1nxh">Hormones: <strong>Estrogen and progesterone are at their lowest</strong> Body Feels: Lower energy, increased fatigue, possible cramps or bloating Best Training Approach: ✅ <strong>Gentle movement</strong> like yoga, stretching, or walking ✅ <strong>Lower-intensity strength workouts</strong> if you feel up for it ✅ <strong>Prioritize rest and recovery</strong> if your body needs it</div>
+      <div class="ace-line ace-line old-record-id-ILqtdXlA4ocOszxZESOc3YCunbf">💡 <strong>Mindful Tip:</strong> This is the perfect time to tune into <strong>breathwork, meditation, or restorative yoga</strong>. Give yourself grace—rest is just as important as movement!</div>
+      <div class="ace-line ace-line old-record-id-D6PVdOZFAoHnLkxXNU2cuJFMnyb">📖 <strong>Reference:</strong> Janse de Jonge X. "Effects of the Menstrual Cycle on Exercise Performance." <em>Sports Medicine</em>, 2003.</div>
+      <ol start="2" class="list-number1">
+      <li class="ace-line ace-line old-record-id-RB6Zdh3sloUYyKx2G3pcejfgnkh" data-list="number">
+      <div>
+      <strong>Follicular Phase (Days 6-14): Strength &amp; Power</strong> ⚡</div>
+      </li>
+      </ol>
+      <div class="ace-line ace-line old-record-id-AZwzdCHYYoEB4wxIpEEcGkUFn6b">Hormones: <strong>Estrogen starts rising, boosting energy and endurance</strong> Body Feels: Strong, focused, ready to push harder Best Training Approach: ✅ <strong>Strength training and HIIT</strong> – Your body is primed for gains! ✅ <strong>Sprint or explosive power workouts</strong> – Great time to build speed ✅ <strong>Try new fitness challenges</strong> – You’re likely to feel motivated</div>
+      <div class="ace-line ace-line old-record-id-QzXLdAMSyo2K3mxKou6cdYhCnLh">💡 <strong>Mindful Tip:</strong> This is the best time to <strong>push yourself a little harder</strong> and make progress in strength-based workouts.</div>
+      <div class="ace-line ace-line old-record-id-PEdIdMcfuo6tuux7ud1cBRdWnhh">📖 <strong>Reference:</strong> Sung E, et al. "The Effects of the Menstrual Cycle on Muscle Strength." <em>Journal of Strength and Conditioning Research</em>, 2014.</div>
+      <ol start="3" class="list-number1">
+      <li class="ace-line ace-line old-record-id-Cihpd1Dryom2hGxFqFrcM06Xnpc" data-list="number">
+      <div>
+      <strong>Ovulatory Phase (Days 15-17): Peak Performance</strong> 🔥</div>
+      </li>
+      </ol>
+      <div class="ace-line ace-line old-record-id-R75gdp3aFonoOExuZxDcXYZvnkd">Hormones: <strong>Estrogen peaks, testosterone rises slightly</strong> Body Feels: Strong, confident, high endurance Best Training Approach: ✅ <strong>High-intensity strength or endurance workouts</strong> – Best time for PRs! ✅ <strong>Team sports or social workouts</strong> – Increased motivation ✅ <strong>Plyometrics &amp; explosive movements</strong> – Your body is ready for it!</div>
+      <div class="ace-line ace-line old-record-id-MPvwdUeK2oiYvExTPrqcSkGRnSh">💡 <strong>Mindful Tip:</strong> Your <strong>reaction time and coordination are at their best</strong> during ovulation—this is a great time for activities like rock climbing, dance, or dynamic workouts.</div>
+      <div class="ace-line ace-line old-record-id-Vm64dszMkorYKmxGIRJcgAzWn2a">📖 <strong>Reference:</strong> Tenan MS, et al. "Hormonal Fluctuations and Athletic Performance." <em>International Journal of Sports Science &amp; Coaching</em>, 2016.</div>
+      <ol start="4" class="list-number1">
+      <li class="ace-line ace-line old-record-id-GdPtdxbdBopNIaxOSzAcLHIdnBb" data-list="number">
+      <div>
+      <strong>Luteal Phase (Days 18-28): Mindful Movement &amp; Recovery</strong> 🌿</div>
+      </li>
+      </ol>
+      <div class="ace-line ace-line old-record-id-IxZzdv2VDoeXDgxJXYbc7UEmnbg">Hormones: <strong>Progesterone rises, estrogen gradually drops</strong> Body Feels: Increased fatigue, mood changes, cravings Best Training Approach: ✅ <strong>Moderate-intensity strength training</strong> – Listen to your body ✅ <strong>Yoga and pilates</strong> – Great for stress relief ✅ <strong>Walking or light cardio</strong> – Avoid overexertion</div>
+      <div class="ace-line ace-line old-record-id-OnOGdgfXVo1jY7xlm0NcRS5HnBm">💡 <strong>Mindful Tip:</strong> Be kind to yourself. <strong>Opt for movement that feels good</strong> rather than pushing through exhaustion.</div>
+      <div class="ace-line ace-line old-record-id-CWWZd3OCSoyvKYxwQBBcaFPYn9f">📖 <strong>Reference:</strong> De Souza MJ, et al. "The Effects of Hormonal Changes on Female Athletes." <em>Journal of Sports Endocrinology</em>, 2021.</div>
+      <h2 class="heading-2 ace-line old-record-id-BqHKdd9Xtop7TKxxneWcbEx4nfe"><strong>Creating Your Cycle-Synced Training Schedule</strong></h2>
+      <div class="ace-line ace-line old-record-id-LY4YdJZjroefLnxlhc6cEQqPnjf">Here’s how you can <strong>balance your training</strong> throughout your cycle:</div>
+      <div class="ace-line ace-line old-record-id-F47bdfAJnohxjvxjuUIcCZDMnXb">🗓 <strong>Week 1 (Menstrual Phase):</strong>
+      </div>
+      <ul start="1" class="list-bullet1">
+      <li class="ace-line ace-line old-record-id-HyEydC8LKoDxwpxPbZdcIkzDn5b" data-list="bullet">
+      <div>
+      <strong>Gentle workouts:</strong> walking, yoga, mobility work</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-DwOQdB0VNoGrHGxKcQtcEN24nuc" data-list="bullet">
+      <div>
+      <strong>Focus on recovery</strong> and <em>listening to your body</em>
+      </div>
+      </li>
+      </ul>
+      <div class="ace-line ace-line old-record-id-YxDFdbhhpoK1lix6PIJcFxkJnFg">🗓 <strong>Week 2 (Follicular Phase):</strong>
+      </div>
+      <ul start="1" class="list-bullet1">
+      <li class="ace-line ace-line old-record-id-SQVWddE1dorhOmxdFHhcPG6Gnqe" data-list="bullet">
+      <div>
+      <strong>Strength and HIIT workouts</strong> (build muscle &amp; endurance)</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-QQ6XdOuqSoOzcNxkm0YcYVNGnWU" data-list="bullet">
+      <div>
+      <strong>Try new challenges</strong> (learning new skills is easier!)</div>
+      </li>
+      </ul>
+      <div class="ace-line ace-line old-record-id-X6eWdgU0LoFaPJxgvOpciQFhnDb">🗓 <strong>Week 3 (Ovulation Phase):</strong>
+      </div>
+      <ul start="1" class="list-bullet1">
+      <li class="ace-line ace-line old-record-id-Hh6wdMPQSo4nxvxejrucU0o0nwb" data-list="bullet">
+      <div><strong>High-intensity training &amp; performance-focused workouts</strong></div>
+      </li>
+      <li class="ace-line ace-line old-record-id-Nbkdd0p0ko7fX6x2XZ0cxHlHnCm" data-list="bullet">
+      <div><strong>Play sports, dance, or push for PBs in the gym</strong></div>
+      </li>
+      </ul>
+      <div class="ace-line ace-line old-record-id-DSHudCJHpoV3lbxq3TSctaDMnvf">🗓 <strong>Week 4 (Luteal Phase):</strong>
+      </div>
+      <ul start="1" class="list-bullet1">
+      <li class="ace-line ace-line old-record-id-EtCtdIXowouf87xb54PcHzJJnEh" data-list="bullet">
+      <div><strong>Lower-intensity strength &amp; cardio</strong></div>
+      </li>
+      <li class="ace-line ace-line old-record-id-TMgFdzeZloWbsnxRi9kc09yrnXg" data-list="bullet">
+      <div><strong>Mindful movement like pilates &amp; stretching</strong></div>
+      </li>
+      </ul>
+      <h2 class="heading-2 ace-line old-record-id-SEmjdAGXzoFHJZx0uzSctwZznLe"><strong>Other Factors to Consider</strong></h2>
+      <div class="ace-line ace-line old-record-id-TplrdjG06oE2N1xn7BicZW7Cnpe">☀️ <strong>Nutrition Matters</strong>: Prioritize protein, healthy fats, and complex carbs for <strong>hormonal balance and sustained energy</strong>.</div>
+      <div class="ace-line ace-line old-record-id-TBFxdXSd3oiQy3xrJtrcQ12fn3R">💧 <strong>Hydration is Key</strong>: Your body needs <strong>extra hydration during your </strong><strong>cycle</strong>—so drink up!</div>
+      <div class="ace-line ace-line old-record-id-HWs8dNqGHofi4yxBjCFcN1BEnNd">😴 <strong>Quality Sleep</strong>: Recovery is just as important as training. <strong>Prioritize rest</strong> when your body asks for it.</div>
+      <div class="ace-line ace-line old-record-id-EcqndOFdDoep5wx26Njc8ul4nsh">📖 <strong>Reference:</strong> Elliott-Sale KJ, et al. "Nutrition and the Female Athlete." <em>European Journal of Sport Science</em>, 2020.</div>
+      <h2 class="heading-2 ace-line old-record-id-Vj25d4Q3zojxx2xxaQkcBsK8nJc"><strong>Final Thoughts: Move in Sync with Your Body</strong></h2>
+      <div class="ace-line ace-line old-record-id-XpVyda0JpoR0h6x6sm2chYwQnWg">Working <strong>with your cycle, rather than against it</strong>, allows you to <strong>train smarter, feel stronger, and recover better</strong>. Instead of pushing through exhaustion or frustration, you can <strong>embrace the natural ebb and flow</strong> of energy that your body experiences every month.</div>
+      <div class="ace-line ace-line old-record-id-BCazdIAZvohrvQxJnXkc1M2DnQh">Your body is powerful, wise, and always working <em>for</em> you. <strong>Honor it, trust it, and move with intention.</strong> 💛</div>
+      <h3 class="heading-3 ace-line old-record-id-LWxedniwCo6BOFxH5lGcffD6nNc"><strong>References</strong></h3>
+      <ol start="1" class="list-number1">
+      <li class="ace-line ace-line old-record-id-FmTOdxtSUomsCtx4kpdc7TWvnAf" data-list="number">
+      <div>Janse de Jonge X. "Effects of the Menstrual Cycle on Exercise Performance." <em>Sports Medicine</em>, 2003.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-JWRJd6lyKo2TGIxh8HjcqVUvnxh" data-list="number">
+      <div>Sung E, et al. "The Effects of the Menstrual Cycle on Muscle Strength." <em>Journal of Strength and Conditioning Research</em>, 2014.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-MddcdKJXHopxkKxxb3ocFpzGnOf" data-list="number">
+      <div>Tenan MS, et al. "Hormonal Fluctuations and Athletic Performance." <em>International Journal of Sports Science &amp; Coaching</em>, 2016.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-Cgrbdcsa8or77GxYhSLcW939n6c" data-list="number">
+      <div>De Souza MJ, et al. "The Effects of Hormonal Changes on Female Athletes." <em>Journal of Sports Endocrinology</em>, 2021.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-Sh0cdQS1WoZ5EQxQJ5ZcqoKJn4e" data-list="number">
+      <div>Elliott-Sale KJ, et al. "Nutrition and the Female Athlete." <em>European Journal of Sport Science</em>, 2020.</div>
+      </li>
+      </ol>
+      <div class="ace-line ace-line old-record-id-VwgbdfpmWoT7h4x9GzHciWBnnAc">Do you <strong>adjust your workouts</strong> based on your cycle? Let me know in the comments! 🌿💛✨</div>
+      <div class="ace-line ace-line old-record-id-VwgbdfpmWoT7h4x9GzHciWBnnAc">
+      <p>Meet Fitnexa, your AI-driven companion that turns everyday habits into a positive, uplifting journey. From effortless meal analysis (including recipe suggestions) to personalized coaching and real-time support, Fitnexa keeps you on track toward lasting wellness — so you can stay younger, live longer.</p>
+      <p>https://apple.co/4hr8JGW</p>
+      <p><img alt="" src="https://cdn.shopify.com/s/files/1/0641/2822/1345/files/qr-code_1.jpg?v=1738826318"></p>
+      </div>
+      </div>
+      <p> </p>
+  </article>
+
+  <div class="section-divider"></div>
+
+  <!-- Latest posts -->
+  <section class="latest-posts">
+    <div class="latest-wrapper">
+      <h3>Latest Posts</h3>
+      <div class="post-grid">
+        <!-- Post card 1 -->
+        <a href="#" class="card">
+          <img src=" https://cdn.shopify.com/s/files/1/0641/2822/1345/files/shutterstock_2478348457.jpg?v=1740040979" alt=" ">
+          <div class="card-content">
+            <div class="category">Sports</div>
+            <div class="card-title">How to Calculate Your Macronutrient Needs (Without Overcomplicating It)</div>
+            <div class="by">By FITNEXA</div>
+          </div>
+        </a>
+        <!-- Post card 2 -->
+        <a href="#" class="card">
+          <img src="https://cdn.shopify.com/s/files/1/0641/2822/1345/files/shutterstock_1503503186.jpg?v=1740107777" alt=" ">
+          <div class="card-content">
+            <div class="category">Sports</div>
+            <div class="card-title">How to Build Explosive Power for Sports Performance 💥🏆</div>
+            <div class="by">By FITNEXA</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+</html>

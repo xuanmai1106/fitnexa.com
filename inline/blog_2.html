@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+  CHANGE
+  head-title
+   1、 title-section 
+   2、 post-image 
+   3、 content
+  -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>How to Build Explosive Power for Sports Performance 💥🏆</title>
+  <!--<link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/xuanmai1106/fitnexa.com/main/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/xuanmai1106/fitnexa.com/main/logo.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/xuanmai1106/fitnexa.com/main/logo.png">-->
+  <style>
+    /* Import the same fonts used on the original Webflow site.  
+       Tenor Sans for display headings, Source Serif Pro for body text and
+       Libre Franklin for UI labels. If these remote fonts fail to load,
+       system fallbacks ensure readable typography. */
+    @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Source+Serif+Pro:wght@400;600;700&family=Libre+Franklin:wght@400;600&display=swap');
+
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #111111;
+      --muted-color: #666666;
+      --border-color: #e5e5e5;
+      --accent-color: #000000;
+      --primary-font: 'Source Serif Pro', Georgia, serif;
+      --display-font: 'Tenor Sans', 'Times New Roman', serif;
+      --ui-font: 'Libre Franklin', Arial, sans-serif;
+      --max-width: 1150px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--primary-font);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+        /* Section divider matching latest-posts width */
+    .section-divider {
+      max-width: var(--max-width);
+      margin: 2rem auto;
+      padding: 0 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+
+
+    /* ---------- Title section ---------- */
+    .title-section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1rem 2rem;
+    }
+    .category {
+      font-family: var(--ui-font);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted-color);
+      margin-bottom: 1.5rem;
+    }
+    .title-section h1 {
+      margin: 0;
+      font-family: var(--display-font);
+      font-weight: 400;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      line-height: 1.15;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .meta {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--ui-font);
+      font-size: 0.85rem;
+      color: var(--muted-color);
+    }
+    /*  logo  */
+    .meta .brand-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: url('https://raw.githubusercontent.com/xuanmai1106/fitnexa.com/main/logo.png') center/cover no-repeat;
+    }
+    .meta .byline strong {
+      font-weight: 600;
+      color: var(--text-color);
+    }
+    .divider {
+      border-bottom: 1px solid var(--border-color);
+      margin: 2rem 0;
+    }
+    /* Reveal animation for title section on page load */
+    @keyframes titleFadeInUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .title-section {
+      animation: titleFadeInUp 700ms ease-out 80ms both;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .title-section { animation: none; }
+    }
+    /* ---------- Post image ---------- */
+    .post-image {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1rem 3rem;
+    }
+    .post-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0.25rem;
+    }
+
+    /* ---------- Content ---------- */
+    .content {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 0 1rem 2rem; 
+      font-size: 1rem;
+    }
+  
+    .content img {
+      max-width: 240px;
+      height: auto;
+      display: block;
+      margin: 1.25rem auto;
+    }
+    .content p {
+      margin: 1.25rem 0;
+    }
+    .content p strong {
+      font-weight: 600;
+    }
+    .content h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-family: var(--display-font);
+      font-weight: 400;
+      font-size: 1.75rem;
+      line-height: 1.3;
+    }
+    .content ul {
+      padding-left: 1.2rem;
+      margin: 1rem 0;
+    }
+    .content ul li {
+      margin: 0.5rem 0;
+    }
+    /* Ordered list tuning: smaller font-size and comfy line-height */
+    .content ol {
+      padding-left: 1.4rem;
+      margin: 1rem 0;
+      list-style: decimal outside;
+    }
+    .content ol li {
+      margin: 0.5rem 0;
+      line-height: 1.45;
+    }
+    /* Keep number and text on the same line; adjust weight/size */
+    .content ol li > div {
+      display: inline;
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+    .content ol li > div strong {
+      font-weight: 600;
+    }
+    .content ol li::marker {
+      font-family: var(--ui-font);
+      font-weight: 600;
+      color: var(--muted-color);
+    }
+    .content figure {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .content figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.25rem;
+    }
+    .content blockquote {
+      margin: 1.5rem 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--border-color);
+      color: var(--muted-color);
+      font-style: italic;
+    }
+
+    /* ---------- Latest posts section ---------- */
+    .latest-posts {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2rem 1rem; 
+    }
+    .latest-posts h3 {
+      font-family: var(--ui-font);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted-color);
+      margin-bottom: 2rem;
+    }
+    .post-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      border: none; 
+      border-radius: 0.25rem;
+      overflow: hidden;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+      background-color: var(--bg-color);
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .card img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16/9;     
+      object-fit: cover;      
+      height: auto;
+    }
+    .card-content {
+      padding: 1rem;
+      font-family: var(--ui-font);
+    }
+    .card-content .category {
+      color: var(--muted-color);
+      font-family: var(--ui-font);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em; 
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+    .card-content .card-title {
+      margin: 0 0 0.5rem;
+      font-family: var(--display-font);
+      font-size: clamp(1.1rem, 2.2vw, 1.5rem); 
+      line-height: 1.2;
+      color: var(--text-color);
+      font-weight: 400; /* Tenor Sans */
+      text-transform: uppercase;  
+      letter-spacing: 0.02em;     
+    }
+    .card-content .by {
+      font-family: var(--ui-font);
+      font-size: 0.7rem;
+      color: var(--muted-color);
+      text-transform: uppercase;  
+      letter-spacing: 0.12em;
+      font-weight: 600;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Title and meta -->
+  <section class="title-section">
+    <div class="category">Sports</div>
+    <h1>How to Build Explosive Power for Sports Performance 💥🏆</h1>
+    <div class="meta">
+      <div class="brand-icon" aria-hidden="true"></div>
+      <div class="byline">By <strong>FITNEXA</strong> </div>
+    </div>
+  </section>
+
+  <!-- Hero image -->
+  <section class="post-image">
+    <img src="https://cdn.shopify.com/s/files/1/0641/2822/1345/files/shutterstock_1503503186.jpg?v=1740107777" />
+  </section>
+
+  <!-- Article content -->
+  <article class="content">
+    <div data-page-id="OXmed7b8Toa4T6x78Kec3cqUnTc" data-lark-html-role="root" data-docx-has-block-data="false">
+      <div class="ace-line ace-line old-record-id-YY0idr2tEoihHyx0Wd0c3LbQnNh">Hello, beautiful souls! 🌿💛 If you're an athlete—or even just someone who loves to <strong>move with intention and </strong><strong>strength</strong>—you know that explosive power is a game-changer. It’s that burst of <strong>speed, strength, and control</strong> that allows a sprinter to push off the blocks, a basketball player to leap for a dunk, or a yogi to float effortlessly into a handstand.</div>
+      <div class="ace-line ace-line old-record-id-LbBEdgNObo5LXXxU4occbrqmnGe">But here’s the thing—<strong>explosiveness isn’t just about muscle.</strong> It’s about breath, focus, and training your body <strong>to work efficiently and powerfully</strong> in every movement. And the best part? You don’t need fancy equipment to build it—just mindful, consistent movement and <strong>the right kind of training</strong>.</div>
+      <div class="ace-line ace-line old-record-id-TyYZdhUeboxtIqx8k4ZcK37qnGc">So let’s roll out the mat, take a deep breath, and dive into the world of <strong>explosive power</strong>. 🌟</div>
+      <h2 class="heading-2 ace-line old-record-id-JN43dmg7eorFNgxIW1jcTfvrnFd"><strong>What is Explosive Power?</strong></h2>
+      <div class="ace-line ace-line old-record-id-ADT9dn3v5ouWiQxwSYgciN7Fnyf">Explosive power is the ability to generate <strong>maximum force in minimal time</strong>. It’s that <em>quick-fire</em> movement that allows athletes to sprint faster, jump higher, or change direction with agility. This type of power comes from a combination of:</div>
+      <div class="ace-line ace-line old-record-id-FBaSdWKiDoauiUxK4L0cXxSAnGd">✅ <strong>Strength</strong> – The foundation of power. Stronger muscles generate more force. ✅ <strong>Speed</strong> – Quick movements require fast-twitch muscle activation. ✅ <strong>Coordination</strong> – Mind-body awareness helps you <strong>control</strong> power without wasting energy. ✅ <strong>Mobility</strong> – A strong but <em>tight</em> body won’t be explosive. Flexibility and range of motion matter. ✅ <strong>Breath Control</strong> – Power comes from <strong>intention and breath</strong>, just like in yoga.</div>
+      <div class="ace-line ace-line old-record-id-DO5nd8vWcoW5idxS0JfcGq26nyf">📖 <strong>Reference</strong>: Newton RU, Kraemer WJ. "Developing Explosive Muscular Power: Implications for a Mixed-Methods Approach." <em>Sports Medicine</em>, 1994.</div>
+      <h2 class="heading-2 ace-line old-record-id-V76bdQNChoJeqUxoQ2FcZWhwn6c"><strong>Training Techniques to Build Explosive Power</strong></h2>
+      <div class="ace-line ace-line old-record-id-NnMndo0vnoGjDNxW5SycxdVFnRb">Building power is about <strong>balance</strong>—strength, speed, and control. Here’s how to do it:</div>
+      <ol start="1" class="list-number1">
+      <li class="ace-line ace-line old-record-id-FSHCdgZLSoJWPgxjk7ocTyicnUh" data-list="number">
+      <div>
+      <strong>Plyometrics</strong><strong>: Jump Into Power</strong>
+      </div>
+      </li>
+      </ol>
+      <div class="ace-line ace-line old-record-id-HHOtdll3Sof5wFxaNl1ctJi9nQc">Plyometric exercises train your <strong>fast-twitch muscle fibers</strong>, which are responsible for explosive movements. These moves <strong>condition your muscles, tendons, and nervous system</strong> to respond quickly and efficiently.</div>
+      <div class="ace-line ace-line old-record-id-S9x3dbc4FoWvtlx9UBwc0XgInGd">🌟 <strong>Try These:</strong>
+      </div>
+      <ul start="1" class="list-bullet1">
+      <li class="ace-line ace-line old-record-id-PG5QdjgywoauMLxCc4bcLu6hnHe" data-list="bullet">
+      <div>
+      <strong>Jump Squats</strong> – Land soft, explode high.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-LND3dO7rWoqY7mx5Wzcc25q9nbg" data-list="bullet">
+      <div>
+      <strong>Box Jumps</strong> – Focus on <em>power</em> over height.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-LB6qdQm7KoA1bZxckkjczJYAnDe" data-list="bullet">
+      <div>
+      <strong>Lateral Bounds</strong> – Improve <strong>agility and control</strong> with side-to-side jumps.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-RgzCd0e5poSctcxzUgyciR2qnAf" data-list="bullet">
+      <div>
+      <strong>Clap Push-Ups</strong> – Activate <strong>upper body explosiveness</strong>.</div>
+      </li>
+      </ul>
+      <div class="ace-line ace-line old-record-id-IvdgdEZLzo6ErDxshDHcmVGCnXg">💡 <strong>Mindful Tip:</strong> Imagine <strong>pushing through the earth</strong> with every jump. Focus on control <em>both up and down</em>.</div>
+      <div class="ace-line ace-line old-record-id-MWkqd5Px9oqGFPxInobcb1eFnId">📖 <strong>Reference</strong>: Markovic G. "Does Plyometric Training Improve Vertical Jump Height? A Meta-Analytical Review." <em>British Journal of Sports Medicine</em>, 2007.</div>
+      <ol start="2" class="list-number1">
+      <li class="ace-line ace-line old-record-id-OdGOdeIdNondMQxDcbacXQd7nlf" data-list="number">
+      <div><strong>Strength Training: Build the Base</strong></div>
+      </li>
+      </ol>
+      <div class="ace-line ace-line old-record-id-SFBadpTWeoKnbfxYgZZc2vvunJe">You can’t generate power without <strong>a strong foundation</strong>. <strong>Think of a tree—deep roots keep it stable before it can reach high.</strong> The same applies to your body! Strength training builds those "roots" so you can explode with force.</div>
+      <div class="ace-line ace-line old-record-id-VHsVdp7Fyo6GKFxfMJfcVzFXnRe">🌟 <strong>Try These:</strong>
+      </div>
+      <ul start="1" class="list-bullet1">
+      <li class="ace-line ace-line old-record-id-BHiBdLMeNoiIDYxz6NEc3GVvnc5" data-list="bullet">
+      <div>
+      <strong>Deadlifts</strong> – Strengthens posterior chain (glutes, hamstrings, core).</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-TN7KdLKltoEq9SxV9mvcRbDbnmc" data-list="bullet">
+      <div>
+      <strong>Squats</strong> – Foundation for <em>everything explosive</em>.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-WMw9dfjg7oDpnfxjViAc9QTpnmb" data-list="bullet">
+      <div>
+      <strong>Kettlebell Swings</strong> – Full-body <strong>power move</strong> that mimics real-life explosiveness.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-FwWWd2UM9ovwpWx7LXkcOecNn9U" data-list="bullet">
+      <div>
+      <strong>Medicine Ball Slams</strong> – Teaches <strong>force production</strong> from head to toe.</div>
+      </li>
+      </ul>
+      <div class="ace-line ace-line old-record-id-QHOndYwuAouQ4vxzY3fcB0vUn4h">💡 <strong>Mindful Tip:</strong> Keep your <strong>breath connected to your movement</strong>. <strong>Inhale before the lift, exhale on exertion.</strong>
+      </div>
+      <div class="ace-line ace-line old-record-id-IGXPdNiXYoHoEIxcjaLchEqMngf">📖 <strong>Reference</strong>: Suchomel TJ, Nimphius S, Stone MH. "The Importance of Muscular Strength in Athletic Performance." <em>Sports Medicine</em>, 2016.</div>
+      <ol start="3" class="list-number1">
+      <li class="ace-line ace-line old-record-id-QLrrdHbjiovCoCxWE5ZcBDmZnsc" data-list="number">
+      <div><strong>Speed Drills: Train Fast to Move Fast</strong></div>
+      </li>
+      </ol>
+      <div class="ace-line ace-line old-record-id-JUWtdbDzVoMgxdxZGtuc0LTpngf">Speed isn’t just for runners! If you want to <strong>move explosively</strong>, you have to train your body <strong>to react quickly</strong>.</div>
+      <div class="ace-line ace-line old-record-id-KPv1dVMLao3I1oxYQ2RcMRnUnle">🌟 <strong>Try These:</strong>
+      </div>
+      <ul start="1" class="list-bullet1">
+      <li class="ace-line ace-line old-record-id-I7tsdSZWkotN4uxNSBScwBcaneb" data-list="bullet">
+      <div>
+      <strong>Sprint Intervals</strong> – 20-30m sprints with <strong>full rest</strong> in between.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-HzxWdA4vPoGbHRx1b1CcM9mKnif" data-list="bullet">
+      <div>
+      <strong>Reaction Drills</strong> – Have a partner call out movements (jump, sprint, cut left/right).</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-RAOPdE4Ncox1Q9xNvf6cskGGn0d" data-list="bullet">
+      <div>
+      <strong>Hill Sprints</strong> – Strength + speed + mental grit.</div>
+      </li>
+      </ul>
+      <div class="ace-line ace-line old-record-id-WZhKdA0IMoMWFNxgB8ActOsUnwf">💡 <strong>Mindful Tip:</strong> Stay <strong>light on your feet</strong>. Imagine your body <strong>flowing effortlessly</strong> through space.</div>
+      <div class="ace-line ace-line old-record-id-HMAfdpSdTou3dqxJihGcXzWEnj9">📖 <strong>Reference</strong>: Nagahara R, et al. "Ground Reaction Forces in Sprint Running: A Systematic Review." <em>Journal of Sports Science</em>, 2018.</div>
+      <ol start="4" class="list-number1">
+      <li class="ace-line ace-line old-record-id-Di7Ld0FGyomwOyxyoz7cdVubnyd" data-list="number">
+      <div><strong>Mobility &amp; Flexibility: Unlock Your Full Potential</strong></div>
+      </li>
+      </ol>
+      <div class="ace-line ace-line old-record-id-NdKAdd4sxogfzZxpEabc1MEynsH">A tight, stiff body <em>blocks</em> power from flowing. <strong>Mobility is your secret weapon</strong> for better movement efficiency, injury prevention, and maximizing force output.</div>
+      <div class="ace-line ace-line old-record-id-Rb1CdgaUQo9x6Ax6jFRcYUZvnDg">🌟 <strong>Try These:</strong>
+      </div>
+      <ul start="1" class="list-bullet1">
+      <li class="ace-line ace-line old-record-id-JcIMdAnMqooyRbxodiccTROSnMs" data-list="bullet">
+      <div>
+      <strong>Deep Squat Holds</strong> – Open up hips for <strong>better power transfer</strong>.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-KUPAdVSczoMyTLxDTvDcxJZwnXe" data-list="bullet">
+      <div>
+      <strong>Hip Flexor Stretches</strong> – Crucial for sprinters and lifters.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-RcpsdV2vYo0gquxOpelcWVd5nFc" data-list="bullet">
+      <div>
+      <strong>Thoracic Spine Mobility</strong> – Keep your upper body <strong>free and strong</strong>.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-CsqbdHZq8oS7SwxwCRfcgB5CnXd" data-list="bullet">
+      <div>
+      <strong>Yoga Flow for Athletes</strong> – Balance strength with softness.</div>
+      </li>
+      </ul>
+      <div class="ace-line ace-line old-record-id-Y661dLtYdok76oxRCs8cjPhqn2b">💡 <strong>Mindful Tip:</strong> <strong>Don’t rush through stretching.</strong> Treat it as part of your training, not an afterthought.</div>
+      <div class="ace-line ace-line old-record-id-WsH1diWz9oO4vtxPAilcpxoynvh">📖 <strong>Reference</strong>: Behm DG, et al. "Acute Effects of Static Stretching on Strength and Power Performance." <em>European Journal of Applied Physiology</em>, 2011.</div>
+      <h2 class="heading-2 ace-line old-record-id-Xhb7dCIeyoM7GpxYITXcLHdHn1b"><strong>How to Breathe for Power</strong></h2>
+      <div class="ace-line ace-line old-record-id-JhuPdLgsWonhEOx7qB4cOTCTnfc">Breath is <strong>your foundation</strong> for movement. Whether you’re lifting, sprinting, or jumping, <strong>your breath controls your power output</strong>.</div>
+      <div class="ace-line ace-line old-record-id-OSSUdHJd7o2GuBx4PGgcPIzfnhg">🌟 <strong>Breathwork Tips for Explosiveness:</strong>
+      </div>
+      <ul start="1" class="list-bullet1">
+      <li class="ace-line ace-line old-record-id-XAXzdUW3PoNcUzxSJXJcTPLmnGh" data-list="bullet">
+      <div><strong>Inhale before effort, exhale with power.</strong></div>
+      </li>
+      <li class="ace-line ace-line old-record-id-V2a2dyMBYoDuktxIeSbcHEb0nZe" data-list="bullet">
+      <div>
+      <strong>Use diaphragmatic breathing</strong> to engage your deep core.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-IE8udgaouorBVXxk4EmchwvknOf" data-list="bullet">
+      <div>
+      <strong>Try the "power breath"</strong> – Short, <strong>forceful exhales</strong> during lifts/jumps.</div>
+      </li>
+      </ul>
+      <div class="ace-line ace-line old-record-id-IVUDdFVNOoBJXexVU7scgDuonRg">💡 <strong>Mindful Tip:</strong> Feel <strong>your breath support you</strong>. Your <strong>inhale fuels the effort, your exhale releases the energy</strong>.</div>
+      <div class="ace-line ace-line old-record-id-DrAddls5yoyHp5xoIlicS4JOnFb">📖 <strong>Reference</strong>: McConnell AK. "Respiratory Muscle Training and Performance." <em>Journal of Sports Sciences</em>, 2012.</div>
+      <h2 class="heading-2 ace-line old-record-id-WOFzdmWihoQpCrxCM3XcGAUnnQe"><strong>Final Thoughts: Explosiveness is About More Than Strength</strong></h2>
+      <div class="ace-line ace-line old-record-id-V4EHdfAjHotuGfxSRMZc4InVnCg">Building <strong>explosive power</strong> isn’t just about lifting heavy or jumping high—it’s about moving with <strong>awareness, precision, and breath</strong>. True power comes from the <strong>connection between body and mind</strong>, where strength meets control, and effort meets intention.</div>
+      <div class="ace-line ace-line old-record-id-EJqddt0DdovXpZxyVUecMg7knKg">So, whether you're <strong>an athlete, a yogi, or just someone who wants to move better</strong>, know that you have <em>all the power you need within you</em>. Trust the process, breathe deeply, and let your strength shine. 🌟💛</div>
+      <h3 class="heading-3 ace-line old-record-id-DhcQdTTcwotnvWxA5nlcz0SbnUd"><strong>References</strong></h3>
+      <ol start="1" class="list-number1">
+      <li class="ace-line ace-line old-record-id-KqAOdNowloATo5xtelScXT9WnPb" data-list="number">
+      <div>Newton RU, Kraemer WJ. "Developing Explosive Muscular Power: Implications for a Mixed-Methods Approach." <em>Sports Medicine</em>, 1994.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-KLsudl8GoonqM1xzHpJcm4oan3c" data-list="number">
+      <div>Markovic G. "Does Plyometric Training Improve Vertical Jump Height? A Meta-Analytical Review." <em>British Journal of Sports Medicine</em>, 2007.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-CJU1do64ioh2SExPKthcaEb6nWh" data-list="number">
+      <div>Suchomel TJ, Nimphius S, Stone MH. "The Importance of Muscular Strength in Athletic Performance." <em>Sports Medicine</em>, 2016.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-PkYtdBzjtoezMqxne5Rc2B25nLe" data-list="number">
+      <div>Nagahara R, et al. "Ground Reaction Forces in Sprint Running: A Systematic Review." <em>Journal of Sports Science</em>, 2018.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-S8scdzAx5oN3HbxooDxcWCp8nXc" data-list="number">
+      <div>Behm DG, et al. "Acute Effects of Static Stretching on Strength and Power Performance." <em>European Journal of Applied Physiology</em>, 2011.</div>
+      </li>
+      <li class="ace-line ace-line old-record-id-Akpld2dBioAz8HxXwzichr9lnfB" data-list="number">
+      <div>McConnell AK. "Respiratory Muscle Training and Performance." <em>Journal of Sports Sciences</em>, 2012.</div>
+      </li>
+      </ol>
+      <div class="ace-line ace-line old-record-id-DIrGd7nMYos9UHxdpGjcj83bnqd">Are you working on <strong>explosive power</strong>? What’s your favorite way to train for speed and strength? Let’s chat in the comments below! 🚀💛</div>
+      </div>
+      <p>Meet Fitnexa, your AI-driven companion that turns everyday habits into a positive, uplifting journey. From effortless meal analysis (including recipe suggestions) to personalized coaching and real-time support, Fitnexa keeps you on track toward lasting wellness — so you can stay younger, live longer.</p>
+      <p>https://apple.co/4hr8JGW</p>
+      <p><img alt="" src="https://cdn.shopify.com/s/files/1/0641/2822/1345/files/qr-code_1.jpg?v=1738826318"></p>
+  </article>
+  <div class="section-divider"></div>
+
+  <!-- Latest posts -->
+  <section class="latest-posts">
+    <div class="latest-wrapper">
+      <h3>Latest Posts</h3>
+      <div class="post-grid">
+        <!-- Post card 1 -->
+        <a href="#" class="card">
+          <img src=" https://cdn.shopify.com/s/files/1/0641/2822/1345/files/shutterstock_2478348457.jpg?v=1740040979" alt=" ">
+          <div class="card-content">
+            <div class="category">Sports</div>
+            <div class="card-title">How to Calculate Your Macronutrient Needs (Without Overcomplicating It)</div>
+            <div class="by">By FITNEXA</div>
+          </div>
+        </a>
+        <!-- Post card 2 -->
+        <a href="#" class="card">
+          <img src="https://cdn.shopify.com/s/files/1/0641/2822/1345/files/shutterstock_1503503186.jpg?v=1740107777" alt=" ">
+          <div class="card-content">
+            <div class="category">Sports</div>
+            <div class="card-title">How to Build Explosive Power for Sports Performance 💥🏆</div>
+            <div class="by">By FITNEXA</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+</html>
